@@ -58,3 +58,28 @@ const tlModelPin = gsap.timeline({
 });
 
 // Color Selection
+const swatches = document.querySelectorAll(".swatches img");
+const gallery = document.querySelector(".phone-gallery");
+const slides = document.querySelectorAll(".image-container");
+let closeIndex = 2;
+let currentSwatch = "blue";
+
+swatches.forEach((swatch, index) => {
+  const coor = slides[index].getBoundingClientRect().left;
+  console.log(slides[index]);
+  console.log(coor);
+
+  swatch.addEventListener("click", (e) => {
+    let swatchName = e.target.getAttribute("swatch");
+    let closeUp = document.querySelector("." + swatchName);
+    if (currentSwatch === swatchName) {
+      return;
+    }
+    gsap.set(closeUp, { zIndex: closeIndex });
+    gsap.fromTo(closeUp, { opacity: 0 }, { opacity: 1, duration: 0.6 });
+    gsap.to(gallery, { x: -(coor - 80) });
+
+    closeIndex++;
+    currentSwatch = swatchName;
+  });
+});
