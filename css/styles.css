@@ -4,3 +4,21 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.fs-0 {
+  font-size: 2.5rem;
+}
+.fs-big {
+  font-size: 3.5rem;
+  width: 50%;
+}
+.text-grey {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 576px) {
+  .fs-big {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+}

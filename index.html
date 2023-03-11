@@ -11,7 +11,60 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <h1>iphone</h1>
+    <header>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg bg-white bg-opacity-50 fixed-top" style="backdrop-filter: blur(10px)">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">Iphone 13 Pro</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Switing to iPhone</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">iPhone</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tech Specs</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-sm btn-primary rounded-3 px-2">Buy Now</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- banner -->
+      <section class="my-5 pt-2 position-relative">
+        <div class="position-absolute text-center top-50 start-50 translate-middle">
+          <h1 class="fw-semibold fs-3">iPhone 13 Pro</h1>
+          <h1 class="fs-0 fw-semibold">Oh. So. Pro</h1>
+        </div>
+        <video class="w-100 object-fit-cover" src="./images/videos/intro-animation.mov" autoplay muted style="height: 600px"></video>
+      </section>
+      <!-- product brief -->
+      <section class="my-5 position-relative">
+        <p class="text-container fs-big fw-semibold text-grey position-relative text-center mx-auto py-3" style="z-index: 2">
+          <span class="highlight">A dramatically more powerful camera system.</span> <br />
+          <span class="highlight">A display so responsive, every interaction feels new again.</span> <br />
+          <span class="highlight"> The world's fastest smartphone chip. </span> <br />
+          <span class="highlight">Exceptional durability.</span> <br />
+          <span class="highlight">And a huge leap in battery life.</span>
+          <br />
+          <br />
+          <span class="highlight">Let's pro</span>
+        </p>
+        <video class="w-100 h-100 object-fit-cover position-absolute top-0" src="./images/videos/smoke-video.mp4" autoplay muted loop></video>
+      </section>
+    </main>
 
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
