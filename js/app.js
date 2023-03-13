@@ -57,7 +57,7 @@ const tlModelPin = gsap.timeline({
   }
 });
 
-// Color Selection
+// Color Selection and set color
 const swatches = document.querySelectorAll(".swatches img");
 const gallery = document.querySelector(".phone-gallery");
 const slides = document.querySelectorAll(".image-container");
